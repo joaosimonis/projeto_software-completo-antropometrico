@@ -1,0 +1,11 @@
+.paragrafo-resultado, .bad {
+    padding: 10px 20px;
+}
+
+.bad {
+    background-color: rgb(255, 150, 150);
+}
+
+.paragrafo-resultado {
+    background-color: rgb(219, 206, 18);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software para Cálculos Antropométricos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ic.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Software para Cálculos Antropométricos</h1>
+        <nav>
+            <a href="index.html">Índice de Massa Corporal (IMC)</a>
+            <a href="rcq.html">Relação Cintura Quadril (RCQ)</a>
+            <a href="percentualGordura.html">Percentual de Gordura</a>
+            <a href="#ic">Índice de Conicidade (IC)</a>
+            <a href="pg.html">Peso Gordo (PG)</a>
+            <a href="mcm.html">Massa Corporal Magra (MCM)</a>
+            <a href="po.html">Peso Ósseo (PO)</a>
+            <a href="pr.html">Peso Residual (PR)</a>
+            <a href="pm.html">Peso Muscular (PM)</a>
+            <a href="pesoAlvo.html">Peso Alvo</a>
+        </nav>
+    </header>
+    <main>
+        <section class="text-left">
+            <h2>O que é o Índice de Conicidade:</h2>
+            <p>O Índice de Conicidade (IC) é uma medida antropométrica usada para avaliar a distribuição de gordura abdominal e identificar o risco de doenças associadas ao excesso de gordura na região central do corpo, como doenças cardiovasculares e metabólicas. <br> O IC foi desenvolvido para medir o grau de concentração de gordura na região abdominal em comparação com o formato de um cilindro ou cone. A ideia é que, quanto mais gordura concentrada na cintura, mais o corpo se assemelha a um cone, com uma base (a cintura) maior em relação ao resto do corpo. Pessoas com valores mais altos de IC tendem a ter uma maior concentração de gordura abdominal.</p>
+            <h2>Importância de medir o Índice de Conicidade:</h2>
+            <p>O acúmulo de gordura abdominal está associado a um risco elevado de doenças cardiovasculares, diabetes tipo 2 e hipertensão. O IC ajuda a identificar esse risco com maior precisão do que o IMC, pois reflete especificamente a gordura abdominal. Ele pode ser usado em conjunto com o IMC e a RCQ para obter uma visão mais completa da saúde e da composição corporal de um indivíduo.</p>
+        </section>
+
+        <section class="container">
+            <h1>Calcule seu Índice de Conicidade</h1>
+            <form action="/" id="formulario" method="post">
+                <label for="peso">Peso (kg)</label>
+                <input type="text" id="peso" name="peso">
+                <label for="altura">Altura (m)</label>
+                <input type="text" id="altura" name="altura">
+                <label for="cc">Circunferência de cintura (m)</label>
+                <input type="text" id="cc" name="cc">
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+
+        <section class="text-rigth">
+            <h2>Fórmula:</h2>
+            <p>IC = cc / 0.109 * &#8730;(P/A) <br> <br> Onde: <br> cc = circunferência da cintura (m) <br> P = peso (kg) <br> A = altura (m) <br> <br> <i>Fonte: Valdez et al., 1993</i></p>
+            <h2>Classificação do Índice de Conicidade:</h2>
+            <p>A faixa teórica do índice de conicidade é de 1,00 (cilindro perfeito) a 1,73 (cone duploperfeito). <br> Valores mais altos de IC indicam maior concentração de gordura abdominal e, consequentemente, maior risco para a saúde. <br> Valores mais baixos de IC indicam menor concentração de gordura abdominal e menor risco de doenças associadas ao acúmulo de gordura central.</p>
+        </section>
+    </main>
+    <script src="js/ic.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software para Cálculos Antropométricos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rcq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Software para Cálculos Antropométricos</h1>
+        <nav>
+            <a href="index.html">Índice de Massa Corporal (IMC)</a>
+            <a href="#rcq">Relação Cintura Quadril (RCQ)</a>
+            <a href="percentualGordura.html">Percentual de Gordura</a>
+            <a href="ic.html">Índice de Conicidade (IC)</a>
+            <a href="pg.html">Peso Gordo (PG)</a>
+            <a href="mcm.html">Massa Corporal Magra (MCM)</a>
+            <a href="po.html">Peso Ósseo (PO)</a>
+            <a href="pr.html">Peso Residual (PR)</a>
+            <a href="pm.html">Peso Muscular (PM)</a>
+            <a href="pesoAlvo.html">Peso Alvo</a>
+        </nav>
+    </header>
+    <main>
+        <section class="text-left">
+            <h2>O que é a RCQ:</h2>
+            <p>A RCQ é o cálculo da proporção entre a circunferência da cintura e a circunferência do quadril. Essa relação ajuda a indicar se a gordura corporal está mais concentrada na região abdominal (maior risco para a saúde) ou nos quadris (risco menor).</p>
+            <h2>Importância de medir a RCQ:</h2>
+            <p>A RCQ é usada como indicador de doenças metabólicas e cardiovasculares. Pessoas com maior concentração de gordura abdominal (formato "maçã") têm um risco mais elevado de desenvolver essas condições do que aquelas com gordura concentrada nos quadris e coxas (formato "pêra").</p>
+            <h2>Fórmula da RCQ:</h2>
+            <p>RCQ = Circunferência da Cintura (cm) / Circunferência do Quadril (cm)</p>
+        </section>
+
+        <section class="container">
+            <h1>Calcule seu RCQ</h1>
+            <form action="/" id="formulario" method="post">
+                <label for="cintura">Perímeto da cintura (cm)</label>
+                <input type="text" id="cintura" name="cintura">
+                <label for="quadril">Perímetro do quadril (cm)</label>
+                <input type="text" id="quadril" name="quadril">
+                <div class="sexo-div">
+                    Sexo:
+                    <input type="radio" name="sexo" id="masculino" value="masculino" checked> Masculino
+                    <input type="radio" name="sexo" id="feminino" value="feminino"> Feminino
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+
+        <section class="text-rigth">
+            <table>
+                <h2>Classificação para o sexo masculino:</h2>
+                <thead>
+                    <tr>
+                        <th>RCQ (cm)</th>
+                        <th>Classificação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt; 0,90</td>
+                        <td>Baixo risco</td>
+                    </tr>
+                    <tr>
+                        <td>0,90 – 0,99</td>
+                        <td>Risco moderado</td>
+                    </tr>
+                    <tr>
+                        <td>&ge; 1,00</td>
+                        <td>Alto risco</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>Classificação para o sexo feminino:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>RCQ (cm)</th>
+                        <th>Classificação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt; 0,80</td>
+                        <td>Baixo risco</td>
+                    </tr>
+                    <tr>
+                        <td>0,80 – 0,89</td>
+                        <td>Risco moderado</td>
+                    </tr>
+                    <tr>
+                        <td>&ge; 0,90</td>
+                        <td>Alto risco</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <p><i>Fonte: OMS, 2000</i></p>
+        </section>
+    </main>
+    <script src="js/rcq.js"></script>
+</body>
+</html>

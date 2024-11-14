@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software para Cálculos Antropométricos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pesoAlvo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Software para Cálculos Antropométricos</h1>
+        <nav>
+            <a href="index.html">Índice de Massa Corporal (IMC)</a>
+            <a href="rcq.html">Relação Cintura Quadril (RCQ)</a>
+            <a href="percentualGordura.html">Percentual de Gordura</a>
+            <a href="ic.html">Índice de Conicidade (IC)</a>
+            <a href="pg.html">Peso Gordo (PG)</a>
+            <a href="mcm.html">Massa Corporal Magra (MCM)</a>
+            <a href="po.html">Peso Ósseo (PO)</a>
+            <a href="pr.html">Peso Residual (PR)</a>
+            <a href="pm.html">Peso Muscular (PM)</a>
+            <a href="#pesoAlvo">Peso Alvo</a>
+        </nav>
+    </header>
+    <main>
+        <section class="text-left">
+            <h2>O que é o Peso Alvo:</h2>
+            <p>O peso alvo (ou peso ideal) é uma medida antropométrica que representa o peso corporal que uma pessoa deve atingir para alcançar uma composição corporal saudável e equilibrada, com base na proporção de gordura e massa magra desejada. Esse peso é calculado levando em conta as características individuais de gordura corporal, idade, sexo e, às vezes, o nível de atividade física. O peso alvo é particularmente importante para pessoas que buscam melhorar a saúde, reduzir o risco de doenças e aprimorar a condição física.</p>
+            <h2>Importância de medir o Peso Alvo:</h2>
+            <p>É uma medida relevante para orientação de metas de saúde para o paciente, mostrando que ele está evoluindo com o tempo, além de ser significativo para planejamento de treinamento e também planejamento de sua dieta.</p>
+        </section>
+
+        <section class="container">
+            <h1>Calcule seu Peso Alvo</h1>
+            <form action="/" id="formulario" method="post">
+                <label for="mcm">Massa corporal magra (kg)</label>
+                <input type="text" id="mcm" name="mcm">
+                <label for="pg_desejado">Percentual de gordura desejado</label>
+                <input type="text" id="pg_desejado" name="pg_desejado">
+                <button type="submit">Calcular seu peso alvo</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+
+        <section class="text-rigth">
+            <h2>Fórmula:</h2>
+            <p>Peso Alvo = (MCM * 100) / (100 - %G desejado) <br> <br> Onde: <br> MCM = massa corporal magra (kg)<br> %G desejado = percentual de gordura desejado</p>
+            <h2>Classificação do Peso Alvo:</h2>
+            <p>O peso alvo em si não possui uma classificação universal com faixas específicas. <br> Ele depende do objetivo da pessoa. É bom consultar a tabela de classificação vista na parte de percentual de gordura.</p>
+        </section>
+    </main>
+    <script src="js/pesoAlvo.js"></script>
+</body>
+</html>

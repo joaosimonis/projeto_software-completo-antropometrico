@@ -1,0 +1,35 @@
+.paragrafo-resultado, .bad {
+    padding: 10px 20px;
+}
+
+.bad {
+    background-color: rgb(255, 150, 150);
+}
+
+.result-excelente {
+    background-color: rgb(219, 206, 18);
+}
+
+.result-bom {
+    background-color: rgb(18, 219, 52);
+}
+
+.result-acima-media {
+    background-color: rgb(219, 98, 18);
+}
+
+.result-media {
+    background-color: rgb(240, 220, 180);
+}
+
+.result-abaixo-media {
+    background-color: rgb(219, 25, 18);
+}
+
+.result-ruim {
+    background-color: rgb(219, 25, 18);
+}
+
+.result-muito-ruim {
+    background-color: rgb(219, 25, 18);
+}

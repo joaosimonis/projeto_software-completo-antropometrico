@@ -1,0 +1,31 @@
+.paragrafo-resultado, .bad {
+    padding: 10px 20px;
+}
+
+.bad {
+    background-color: rgb(255, 150, 150);
+}
+
+.result-abaixo-peso {
+    background-color: rgb(219, 206, 18);
+}
+
+.result-peso-normal {
+    background-color: rgb(18, 219, 52);
+}
+
+.result-sobrepeso {
+    background-color: rgb(219, 98, 18);
+}
+
+.result-obesidade1 {
+    background-color: rgb(219, 25, 18);
+}
+
+.result-obesidade2 {
+    background-color: rgb(219, 25, 18);
+}
+
+.result-obesidade3 {
+    background-color: rgb(219, 25, 18);
+}

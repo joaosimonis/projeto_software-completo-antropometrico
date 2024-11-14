@@ -1,0 +1,19 @@
+.paragrafo-resultado, .bad {
+    padding: 10px 20px;
+}
+
+.bad {
+    background-color: rgb(255, 150, 150);
+}
+
+.result-baixo-risco {
+    background-color: rgb(18, 219, 52);
+}
+
+.result-risco-moderado {
+    background-color: rgb(219, 98, 18);
+}
+
+.result-alto-risco {
+    background-color: rgb(219, 25, 18);
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software para Cálculos Antropométricos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/percentualGordura.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Software para Cálculos Antropométricos</h1>
+        <nav>
+            <a href="index.html">Índice de Massa Corporal (IMC)</a>
+            <a href="rcq.html">Relação Cintura Quadril (RCQ)</a>
+            <a href="#percentualGordura">Percentual de Gordura</a>
+            <a href="ic.html">Índice de Conicidade (IC)</a>
+            <a href="pg.html">Peso Gordo (PG)</a>
+            <a href="mcm.html">Massa Corporal Magra (MCM)</a>
+            <a href="po.html">Peso Ósseo (PO)</a>
+            <a href="pr.html">Peso Residual (PR)</a>
+            <a href="pm.html">Peso Muscular (PM)</a>
+            <a href="pesoAlvo.html">Peso Alvo</a>
+        </nav>
+    </header>
+    <main>
+        <section class="text-left">
+            <h2>O que é o percentual de gordura:</h2>
+            <p>O percentual de gordura corporal (ou % de gordura corporal) é uma medida que representa a quantidade de gordura que uma pessoa possui em relação ao seu peso total. Ele é um indicador importante para avaliar a saúde e o condicionamento físico, pois ajuda a entender a proporção de massa muscular e gordura no corpo.</p>
+            <h2>Importância de medir o percentual de gordura:</h2>
+            <p>O percentual de gordura é uma forma mais precisa de avaliar a saúde do que apenas o peso, pois considera a distribuição de massa magra (músculos, ossos, órgãos) e gordura.</p>
+            <h2>Fórmula:</h2>
+            <p>Existem várias formas de calcular o percentual de gordura, e algumas delas são mais complexas, como o uso de bioimpedância, medidores de dobras cutâneas, ou exames de DEXA (densitometria óssea). Uma das fórmulas mais simples, utilizada em alguns cálculos aproximados, é a fórmula de Jackson & Pollock, baseada em medições das dobras cutâneas.</p>
+            <p>Em nosso exemplo, estamos usando as 7 dobras de Jackson & Pollock.</p>
+        </section>
+
+        <section class="container">
+            <h1>Calcule seu Percentual de Gordura</h1>
+            <form action="/" id="formulario" method="post">
+                <div class="sexo-div">
+                    Sexo:
+                    <input type="radio" name="sexo" id="masculino" value="masculino" checked> Masculino
+                    <input type="radio" name="sexo" id="feminino" value="feminino"> Feminino
+                </div>
+                <label for="idade">Idade</label>
+                <input type="text" id="idade" name="idade">
+                <label for="peitoral">Dobra do peitoral (mm)</label>
+                <input type="text" id="peitoral" name="peitoral">
+                <label for="triceps">Dobra do tríceps (mm)</label>
+                <input type="text" id="triceps" name="triceps">
+                <label for="subescapular">Dobra do subescapular (mm)</label>
+                <input type="text" id="subescapular" name="subescapular">
+                <label for="supra-iliaca">Dobra da supra-ilíaca (mm)</label>
+                <input type="text" id="supra-iliaca" name="supra-iliaca">
+                <label for="abdomen">Dobra do abdomen (mm)</label>
+                <input type="text" id="abdomen" name="abdomen">
+                <label for="coxa">Dobra da coxa (mm)</label>
+                <input type="text" id="coxa" name="coxa">
+                <label for="axilar">Dobra da axilar média (mm)</label>
+                <input type="text" id="axilar" name="axilar">
+                <button type="submit">Calcular Percentual de Gordura</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+
+        <section class="text-rigth">
+            <section class="text-rigth">
+                <h2>Classificação do Percentual de Gordura para Homens:</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nível / Idade</th>
+                            <th>18 – 25</th>
+                            <th>26 – 35</th>
+                            <th>36 – 45</th>
+                            <th>46 – 55</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Excelente</td>
+                            <td>4 a 6 %</td>
+                            <td>8 a 11 %</td>
+                            <td>10 a 14 %</td>
+                            <td>12 a 16 %</td>
+                        </tr>
+                        <tr>
+                            <td>Bom</td>
+                            <td>8 a 10 %</td>
+                            <td>12 a 15 %</td>
+                            <td>16 a 18 %</td>
+                            <td>18 a 20 %</td>
+                        </tr>
+                        <tr>
+                            <td>Acima da média</td>
+                            <td>12 a 13 %</td>
+                            <td>16 a 18 %</td>
+                            <td>19 a 21 %</td>
+                            <td>21 a 23 %</td>
+                        </tr>
+                        <tr>
+                            <td>Média</td>
+                            <td>14 a 16 %</td>
+                            <td>18 a 20 %</td>
+                            <td>21 a 23 %</td>
+                            <td>24 a 25 %</td>
+                        </tr>
+                        <tr>
+                            <td>Abaixo da média</td>
+                            <td>17 a 20 %</td>
+                            <td>22 a 24 %</td>
+                            <td>24 a 26 %</td>
+                            <td>26 a 27 %</td>
+                        </tr>
+                        <tr>
+                            <td>Ruim</td>
+                            <td>20 a 24 %</td>
+                            <td>24 a 27 %</td>
+                            <td>27 a 29 %</td>
+                            <td>28 a 30 %</td>
+                        </tr>
+                        <tr>
+                            <td>Muito ruim</td>
+                            <td>26 a 36 %</td>
+                            <td>28 a 36 %</td>
+                            <td>30 a 39 %</td>
+                            <td>32 a 38 %</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <h2>Classificação do Percentual de Gordura para Mulheres:</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nível / Idade</th>
+                            <th>18 – 25</th>
+                            <th>26 – 35</th>
+                            <th>36 – 45</th>
+                            <th>46 – 55</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Excelente</td>
+                            <td>13 a 16 %</td>
+                            <td>14 a 17 %</td>
+                            <td>16 a 19 %</td>
+                            <td>17 a 22 %</td>
+                        </tr>
+                        <tr>
+                            <td>Bom</td>
+                            <td>17 a 19 %</td>
+                            <td>18 a 20 %</td>
+                            <td>20 a 24 %</td>
+                            <td>23 a 25 %</td>
+                        </tr>
+                        <tr>
+                            <td>Acima da média</td>
+                            <td>20 a 22 %</td>
+                            <td>21 a 23 %</td>
+                            <td>24 a 26 %</td>
+                            <td>26 a 28 %</td>
+                        </tr>
+                        <tr>
+                            <td>Média</td>
+                            <td>23 a 25 %</td>
+                            <td>24 a 26 %</td>
+                            <td>27 a 29 %</td>
+                            <td>29 a 31 %</td>
+                        </tr>
+                        <tr>
+                            <td>Abaixo da média</td>
+                            <td>26 a 28 %</td>
+                            <td>27 a 29 %</td>
+                            <td>30 a 32 %</td>
+                            <td>32 a 34 %</td>
+                        </tr>
+                        <tr>
+                            <td>Ruim</td>
+                            <td>29 a 31 %</td>
+                            <td>31 a 33 %</td>
+                            <td>33 a 36 %</td>
+                            <td>35 a 38 %</td>
+                        </tr>
+                        <tr>
+                            <td>Muito ruim</td>
+                            <td>32 a 43 %</td>
+                            <td>36 a 49 %</td>
+                            <td>37 a 48 %</td>
+                            <td>39 a 50 %</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <p><i>Fonte: Pollock & Wilmore, 1993</i></p>
+            </section>
+        </section>
+    </main>
+    <script src="js/percentualGordura.js"></script>
+</body>
+</html>

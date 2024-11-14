@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software para Cálculos Antropométricos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mcm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Software para Cálculos Antropométricos</h1>
+        <nav>
+            <a href="index.html">Índice de Massa Corporal (IMC)</a>
+            <a href="rcq.html">Relação Cintura Quadril (RCQ)</a>
+            <a href="percentualGordura.html">Percentual de Gordura</a>
+            <a href="ic.html">Índice de Conicidade (IC)</a>
+            <a href="pg.html">Peso Gordo (PG)</a>
+            <a href="#mcm">Massa Corporal Magra (MCM)</a>
+            <a href="po.html">Peso Ósseo (PO)</a>
+            <a href="pr.html">Peso Residual (PR)</a>
+            <a href="pm.html">Peso Muscular (PM)</a>
+            <a href="pesoAlvo.html">Peso Alvo</a>
+        </nav>
+    </header>
+    <main>
+        <section class="text-left">
+            <h2>O que é a MCM:</h2>
+            <p>A massa corporal magra é o peso total do corpo excluindo a gordura. Ela é composta por músculos, ossos, água, órgãos e todos os outros componentes corporais não adiposos.</p>
+            <h2>Importância de medir a MCM:</h2>
+            <p>A massa corporal magra é um indicador da saúde e do condicionamento físico, pois fornece informações sobre a quantidade de tecido muscular e a força potencial do corpo, além de outros componentes importantes, como ossos e água corporal. Manter uma massa corporal magra adequada traz diversos benefícios.</p>
+        </section>
+
+        <section class="container">
+            <h1>Calcule sua Massa Corporal Magra</h1>
+            <form action="/" id="formulario" method="post">
+                <label for="peso_atual">Peso atual (kg)</label>
+                <input type="text" id="peso_atual" name="peso_atual">
+                <label for="altura">Peso gordo (kg)</label>
+                <input type="text" id="peso_gordo" name="peso_gordo">
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+
+        <section class="text-left">
+            <h2>Fórmula:</h2>
+            <p>MCM = PA - PG <br> <br> Onde: <br> PA = peso atual (kg) <br> PG = peso gordo (kg)</p>
+            <h2>Classificação da MCM:</h2>
+            <p>A massa corporal magra não possui faixas de classificação universal, pois os valores adequados de massa magra variam muito conforme a idade, sexo, altura e nível de atividade física da pessoa.</p>
+        </section>
+    </main>
+    <script src="js/mcm.js"></script>
+</body>
+</html>

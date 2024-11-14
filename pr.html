@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software para Cálculos Antropométricos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pr.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Software para Cálculos Antropométricos</h1>
+        <nav>
+            <a href="index.html">Índice de Massa Corporal (IMC)</a>
+            <a href="rcq.html">Relação Cintura Quadril (RCQ)</a>
+            <a href="percentualGordura.html">Percentual de Gordura</a>
+            <a href="ic.html">Índice de Conicidade (IC)</a>
+            <a href="pg.html">Peso Gordo (PG)</a>
+            <a href="mcm.html">Massa Corporal Magra (MCM)</a>
+            <a href="po.html">Peso Ósseo (PO)</a>
+            <a href="#pr">Peso Residual (PR)</a>
+            <a href="pm.html">Peso Muscular (PM)</a>
+            <a href="pesoAlvo.html">Peso Alvo</a>
+        </nav>
+    </header>
+    <main>
+        <section class="text-left">
+            <h2>O que é o Peso Residual:</h2>
+            <p>O peso residual é a massa dos componentes do corpo que não são gordura, músculo ou osso. Ele inclui órgãos, fluidos corporais, tecido conectivo, além do conteúdo digestivo e outros tecidos não musculares.</p>
+            <h2>Importância de medir o Peso Residual:</h2>
+            <p>A medida do peso residual é importante para obter uma compreensão completa da composição corporal e para cálculos antropométricos que avaliam o corpo humano em detalhes.</p>
+        </section>
+
+        <section class="container">
+            <h1>Calcule seu Peso Residual</h1>
+            <form action="/" id="formulario" method="post">
+                <label for="peso">Peso atual (kg)</label>
+                <input type="text" id="peso" name="peso">
+                <div class="sexo-div">
+                    Sexo:
+                    <input type="radio" name="sexo" id="masculino" value="masculino" checked> Masculino
+                    <input type="radio" name="sexo" id="feminino" value="feminino"> Feminino
+                </div>
+                <button type="submit">Calcular peso residual</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+
+        <section class="text-rigth">
+            <h2>Fórmula:</h2>
+            <p>Homens: PR = PA * (24.1 / 100) <br> Mulheres: PR = PA * (20.9 / 100) <br> <br> Onde: <br> PA = peso atual (kg)</p>
+            <h2>Classificação do Peso Residual: </h2>
+            <p>O peso residual em si não possui uma classificação universal com faixas específicas. Ele representa uma estimativa baseada em uma constante percentual e não varia de forma significativa entre indivíduos saudáveis. Em vez disso, ele é utilizado como referência na análise de composição corporal para complementar as outras medidas.</p>
+        </section>
+    </main>
+    <script src="js/pr.js"></script>
+</body>
+</html>

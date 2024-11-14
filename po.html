@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software para Cálculos Antropométricos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/po.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Software para Cálculos Antropométricos</h1>
+        <nav>
+            <a href="index.html">Índice de Massa Corporal (IMC)</a>
+            <a href="rcq.html">Relação Cintura Quadril (RCQ)</a>
+            <a href="percentualGordura.html">Percentual de Gordura</a>
+            <a href="ic.html">Índice de Conicidade (IC)</a>
+            <a href="pg.html">Peso Gordo (PG)</a>
+            <a href="mcm.html">Massa Corporal Magra (MCM)</a>
+            <a href="#po">Peso Ósseo (PO)</a>
+            <a href="pr.html">Peso Residual (PR)</a>
+            <a href="pm.html">Peso Muscular (PM)</a>
+            <a href="pesoAlvo.html">Peso Alvo</a>
+        </nav>
+    </header>
+    <main>
+        <section class="text-left">
+            <h2>O que é o Peso Ósseo:</h2>
+            <p>O peso ósseo refere-se à massa total dos ossos em uma pessoa, sendo uma parte da composição corporal que, juntamente com a massa muscular e a massa gorda, ajuda a entender a estrutura física total de um indivíduo.</p>
+            <h2>Importância de medir o Peso Ósseo:</h2>
+            <p>Manter uma densidade óssea saudável é crucial para o suporte estrutural do corpo e para a prevenção de condições como osteopenia e osteoporose, que podem levar a fraturas e perda de mobilidade, além de ser importante para a força e estabilidade corporal.</p>
+        </section>
+
+        <section class="container">
+            <h1>Calcule seu Peso Ósseo</h1>
+            <form action="/" id="formulario" method="post">
+                <label for="altura">Altura (m)</label>
+                <input type="text" id="altura" name="altura">
+                <label for="altura">Diâmetro do rádio (m)</label>
+                <input type="text" id="diametro_radio" name="diametro_radio">
+                <label for="altura">Diâmetro do femur (m)</label>
+                <input type="text" id="diametro_femur" name="diametro_femur">
+                <button type="submit">Calcular seu peso ósseo</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+
+        <section class="text-rigth">
+            <h2>Fórmula:</h2>
+            <p>3.02 * (H<sup>2</sup> * R * F * 400)<sup>0.712</sup> <br> <br> Onde: <br> H = estatura (m) <br> R = diâmetro do rádio (m) <br> F = diâmetro do fêmur (m)</p>
+            <h2>Classificação do Peso Ósseo:</h2>
+            <p>O peso ósseo em si não possui uma classificação universal com faixas específicas. <br> Ele é interpretado no contexto de outras variáveis corporais, como altura, idade, sexo e condição física, para entender se uma pessoa tem uma estrutura óssea leve, média ou pesada.</p>
+        </section>
+    </main>
+    <script src="js/po.js"></script>
+</body>
+</html>
